@@ -1,0 +1,110 @@
+
+*** ChampSim Multicore Out-of-Order Simulator ***
+
+Warmup Instructions: 1000000
+Simulation Instructions: 10000000
+Number of CPUs: 1
+LLC sets: 2048
+LLC ways: 16
+Off-chip DRAM Size: 4096 MB Channels: 1 Width: 64-bit Data Rate: 3200 MT/s
+
+CPU 0 runs /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+CPU 0 Bimodal branch predictor
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+
+Warmup complete CPU 0 instructions: 1000004 cycles: 389629 (Simulation time: 0 hr 0 min 4 sec) 
+
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+Heartbeat CPU 0 instructions: 10000000 cycles: 10465692 heartbeat IPC: 0.955503 cumulative IPC: 0.893206 (Simulation time: 0 hr 0 min 56 sec) 
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+*** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
+Finished CPU 0 instructions: 10000000 cycles: 11219385 cumulative IPC: 0.891314 (Simulation time: 0 hr 1 min 1 sec) 
+
+ChampSim completed all CPUs
+
+Region of Interest Statistics
+
+CPU 0 cumulative IPC: 0.891314 instructions: 10000000 cycles: 11219385
+L1D TOTAL     ACCESS:    2431613  HIT:    2309604  MISS:     122009
+L1D LOAD      ACCESS:    1601140  HIT:    1500843  MISS:     100297
+L1D RFO       ACCESS:     830473  HIT:     808761  MISS:      21712
+L1D PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1D WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1D PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+L1D AVERAGE MISS LATENCY: 15.0237 cycles
+L1I TOTAL     ACCESS:    1800523  HIT:    1754052  MISS:      46471
+L1I LOAD      ACCESS:    1800523  HIT:    1754052  MISS:      46471
+L1I RFO       ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L1I WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+L1I PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+L1I AVERAGE MISS LATENCY: 14.0447 cycles
+L2C TOTAL     ACCESS:     194650  HIT:     194650  MISS:          0
+L2C LOAD      ACCESS:     146768  HIT:     146768  MISS:          0
+L2C RFO       ACCESS:      21712  HIT:      21712  MISS:          0
+L2C PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+L2C WRITEBACK ACCESS:      26170  HIT:      26170  MISS:          0
+L2C PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+L2C AVERAGE MISS LATENCY: -nan cycles
+LLC TOTAL     ACCESS:          0  HIT:          0  MISS:          0
+LLC LOAD      ACCESS:          0  HIT:          0  MISS:          0
+LLC RFO       ACCESS:          0  HIT:          0  MISS:          0
+LLC PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
+LLC WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
+LLC PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
+LLC AVERAGE MISS LATENCY: -nan cycles
+Major fault: 0 Minor fault: 172
+
+DRAM Statistics
+ CHANNEL 0
+ RQ ROW_BUFFER_HIT:          0  ROW_BUFFER_MISS:          0
+ DBUS_CONGESTED:          0
+ WQ ROW_BUFFER_HIT:          0  ROW_BUFFER_MISS:          0  FULL:          0
+
+ AVG_CONGESTED_CYCLE: -
+
+CPU 0 Branch Prediction Accuracy: 91.9305% MPKI: 17.0053 Average ROB Occupancy at Mispredict: 20.6086
+
+Branch types
+NOT_BRANCH: 7892303 78.923%
+BRANCH_DIRECT_JUMP: 130381 1.30381%
+BRANCH_INDIRECT: 15831 0.15831%
+BRANCH_CONDITIONAL: 1767357 17.6736%
+BRANCH_DIRECT_CALL: 91119 0.91119%
+BRANCH_INDIRECT_CALL: 5973 0.05973%
+BRANCH_RETURN: 96683 0.96683%
+BRANCH_OTHER: 0 0%
+

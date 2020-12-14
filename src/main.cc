@@ -314,7 +314,7 @@ uint64_t va_to_pa(uint32_t cpu, uint64_t instr_id, uint64_t va, uint64_t unique_
     // smart random number generator
     uint64_t random_ppage;
 
-    map <uint64_t, char>::iterator pr = page_table.begin();
+    map <uint64_t, uint64_t>::iterator pr = page_table.begin();
     map <uint64_t, uint64_t>::iterator ppage_check = inverse_table.begin();
 
     // check unique cache line footprint
@@ -327,7 +327,7 @@ uint64_t va_to_pa(uint32_t cpu, uint64_t instr_id, uint64_t va, uint64_t unique_
         cl_check->second++;
 
     pr = page_table.find(vpage);
-    if (pr == page_table.end) { // no VA => PA translation found 
+    if (pr == page_table.end()) { // no VA => PA translation found 
 
         if (allocated_pages >= DRAM_PAGES) { // not enough memory
 
@@ -336,7 +336,7 @@ uint64_t va_to_pa(uint32_t cpu, uint64_t instr_id, uint64_t va, uint64_t unique_
             uint8_t  found_NRU = 0;
             uint64_t NRU_vpage = 0; // implement it
             map <uint64_t, uint64_t>::iterator pr2 = recent_page.begin();
-            for (pr = page_table.begin; pr != page_table.end; pr++) {
+            for (pr = page_table.begin(); pr != page_table.end(); pr++) {
 
                 NRU_vpage = pr->first;
                 if (recent_page.find(NRU_vpage) == recent_page.end()) {
@@ -348,7 +348,7 @@ uint64_t va_to_pa(uint32_t cpu, uint64_t instr_id, uint64_t va, uint64_t unique_
             if (found_NRU == 0)
                 assert(0);
 
-            if (pr == page_table.end)
+            if (pr == page_table.end())
                 assert(0);
 #endif
             DP ( if (warmup_complete[cpu]) {
@@ -357,8 +357,8 @@ uint64_t va_to_pa(uint32_t cpu, uint64_t instr_id, uint64_t va, uint64_t unique_
             // update page table with new VA => PA mapping
             // since we cannot change the key value already inserted in a map structure, we need to erase the old node and add a new node
             uint64_t mapped_ppage = pr->second;
-            page_table.erse(pr);
-            page_table.isert(make_pair(vpage, mapped_ppage));
+            page_table.erase(pr);
+            page_table.insert(make_pair(vpage, mapped_ppage));
 
             // update inverse table with new PA => VA mapping
             ppage_check = inverse_table.find(mapped_ppage);
@@ -427,7 +427,7 @@ uint64_t va_to_pa(uint32_t cpu, uint64_t instr_id, uint64_t va, uint64_t unique_
 
             // insert translation to page tables
             //printf("Insert  num_adjacent_page: %u  vpage: %lx  ppage: %lx\n", num_adjacent_page, vpage, random_ppage);
-            page_table.inset(make_pair(vpage, random_ppage));
+            page_table.insert(make_pair(vpage, random_ppage));
             inverse_table.insert(make_pair(random_ppage, vpage));
             page_queue.push(vpage);
             previous_ppage = random_ppage;
@@ -454,7 +454,7 @@ uint64_t va_to_pa(uint32_t cpu, uint64_t instr_id, uint64_t va, uint64_t unique_
 
     pr = page_table.find(vpage);
 #ifdef SANITY_CHECK
-    if (pr == page_table.end)
+    if (pr == page_table.end())
         assert(0);
 #endif
     uint64_t ppage = pr->second;

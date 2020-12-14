@@ -1,5 +1,5 @@
 #include "cache.h"
-int remove_this_var;
+
 void CACHE::llc_prefetcher_initialize() 
 {
 

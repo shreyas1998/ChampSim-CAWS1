@@ -1,5 +1,5 @@
 #include "cache.h"
-int remove_this_var;
+
 void CACHE::l1d_prefetcher_initialize() 
 {
 

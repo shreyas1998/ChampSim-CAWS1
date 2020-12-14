@@ -2,6 +2,9 @@
   <h1 align="center"> ChampSim </h1>
 </p>
 
+Updates added to remove bugs for CAWS. The final results for the hello world program is present in 
+./results_10M/champsim.trace.gz-bimodal-no-no-no-no-lru-1core
+
 # Compile
 
 ChampSim takes five parameters: Branch predictor, L1D prefetcher, L2C prefetcher, LLC replacement policy, and the number of cores. 

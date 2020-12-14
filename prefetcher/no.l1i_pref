@@ -1,6 +1,6 @@
 #include "ooo_cpu.h"
 
-int remove_this_var;
+
 
 void O3_CPU::l1i_prefetcher_initialize() 
 {
