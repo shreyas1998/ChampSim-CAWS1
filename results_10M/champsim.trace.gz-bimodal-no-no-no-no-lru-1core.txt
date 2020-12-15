@@ -14,7 +14,7 @@ CPU 0 Bimodal branch predictor
 *** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
 *** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
 
-Warmup complete CPU 0 instructions: 1000004 cycles: 389629 (Simulation time: 0 hr 0 min 4 sec) 
+Warmup complete CPU 0 instructions: 1000002 cycles: 389508 (Simulation time: 0 hr 0 min 7 sec) 
 
 *** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
 *** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
@@ -46,37 +46,37 @@ Warmup complete CPU 0 instructions: 1000004 cycles: 389629 (Simulation time: 0 h
 *** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
 *** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
 *** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
-Heartbeat CPU 0 instructions: 10000000 cycles: 10465692 heartbeat IPC: 0.955503 cumulative IPC: 0.893206 (Simulation time: 0 hr 0 min 56 sec) 
+Heartbeat CPU 0 instructions: 10000002 cycles: 10450733 heartbeat IPC: 0.956871 cumulative IPC: 0.894523 (Simulation time: 0 hr 0 min 40 sec) 
 *** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
 *** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
 *** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
 *** Reached end of trace for Core: 0 Repeating trace: /workspace/personal/caws/ChampSim-CAWS//./champsim.trace.gz
-Finished CPU 0 instructions: 10000000 cycles: 11219385 cumulative IPC: 0.891314 (Simulation time: 0 hr 1 min 1 sec) 
+Finished CPU 0 instructions: 10000000 cycles: 11201987 cumulative IPC: 0.892699 (Simulation time: 0 hr 0 min 45 sec) 
 
 ChampSim completed all CPUs
 
 Region of Interest Statistics
 
-CPU 0 cumulative IPC: 0.891314 instructions: 10000000 cycles: 11219385
-L1D TOTAL     ACCESS:    2431613  HIT:    2309604  MISS:     122009
-L1D LOAD      ACCESS:    1601140  HIT:    1500843  MISS:     100297
-L1D RFO       ACCESS:     830473  HIT:     808761  MISS:      21712
+CPU 0 cumulative IPC: 0.892699 instructions: 10000000 cycles: 11201987
+L1D TOTAL     ACCESS:    2431469  HIT:    2309243  MISS:     122226
+L1D LOAD      ACCESS:    1601289  HIT:    1500799  MISS:     100490
+L1D RFO       ACCESS:     830180  HIT:     808444  MISS:      21736
 L1D PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
 L1D WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
 L1D PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
-L1D AVERAGE MISS LATENCY: 15.0237 cycles
-L1I TOTAL     ACCESS:    1800523  HIT:    1754052  MISS:      46471
-L1I LOAD      ACCESS:    1800523  HIT:    1754052  MISS:      46471
+L1D AVERAGE MISS LATENCY: 15.0238 cycles
+L1I TOTAL     ACCESS:    1799560  HIT:    1753049  MISS:      46511
+L1I LOAD      ACCESS:    1799560  HIT:    1753049  MISS:      46511
 L1I RFO       ACCESS:          0  HIT:          0  MISS:          0
 L1I PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
 L1I WRITEBACK ACCESS:          0  HIT:          0  MISS:          0
 L1I PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
-L1I AVERAGE MISS LATENCY: 14.0447 cycles
-L2C TOTAL     ACCESS:     194650  HIT:     194650  MISS:          0
-L2C LOAD      ACCESS:     146768  HIT:     146768  MISS:          0
-L2C RFO       ACCESS:      21712  HIT:      21712  MISS:          0
+L1I AVERAGE MISS LATENCY: 14.0431 cycles
+L2C TOTAL     ACCESS:     194895  HIT:     194895  MISS:          0
+L2C LOAD      ACCESS:     147001  HIT:     147001  MISS:          0
+L2C RFO       ACCESS:      21737  HIT:      21737  MISS:          0
 L2C PREFETCH  ACCESS:          0  HIT:          0  MISS:          0
-L2C WRITEBACK ACCESS:      26170  HIT:      26170  MISS:          0
+L2C WRITEBACK ACCESS:      26157  HIT:      26157  MISS:          0
 L2C PREFETCH  REQUESTED:          0  ISSUED:          0  USEFUL:          0  USELESS:          0
 L2C AVERAGE MISS LATENCY: -nan cycles
 LLC TOTAL     ACCESS:          0  HIT:          0  MISS:          0
@@ -96,15 +96,15 @@ DRAM Statistics
 
  AVG_CONGESTED_CYCLE: -
 
-CPU 0 Branch Prediction Accuracy: 91.9305% MPKI: 17.0053 Average ROB Occupancy at Mispredict: 20.6086
+CPU 0 Branch Prediction Accuracy: 91.9868% MPKI: 16.8866 Average ROB Occupancy at Mispredict: 20.8477
 
 Branch types
-NOT_BRANCH: 7892303 78.923%
-BRANCH_DIRECT_JUMP: 130381 1.30381%
-BRANCH_INDIRECT: 15831 0.15831%
-BRANCH_CONDITIONAL: 1767357 17.6736%
-BRANCH_DIRECT_CALL: 91119 0.91119%
+NOT_BRANCH: 7892323 78.9232%
+BRANCH_DIRECT_JUMP: 130395 1.30395%
+BRANCH_INDIRECT: 15829 0.15829%
+BRANCH_CONDITIONAL: 1767346 17.6735%
+BRANCH_DIRECT_CALL: 91124 0.91124%
 BRANCH_INDIRECT_CALL: 5973 0.05973%
-BRANCH_RETURN: 96683 0.96683%
+BRANCH_RETURN: 96690 0.9669%
 BRANCH_OTHER: 0 0%
 

@@ -3,8 +3,16 @@
 </p>
 
 Updates added to remove bugs for CAWS. The final results for the hello world program is present in 
-./results_10M/champsim.trace.gz-bimodal-no-no-no-no-lru-1core
+`./results_10M/champsim.trace.gz-bimodal-no-no-no-no-lru-1core`
 
+To get the results after installing pin tool building core using ChampSim-
+```
+$ ./pin-3.17/pin -t ./tracer/obj-intel64/champsim_tracer.so -- ./hello_world.cpp -t 10000000
+
+$ gzip champsim.trace
+
+$ ./run_champsim.sh ./bin/bimodal-no-no-no-no-lru-1core 1 10 ./champsim.trace.gz
+```
 # Compile
 
 ChampSim takes five parameters: Branch predictor, L1D prefetcher, L2C prefetcher, LLC replacement policy, and the number of cores. 
