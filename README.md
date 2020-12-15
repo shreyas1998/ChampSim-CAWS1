@@ -3,7 +3,11 @@
 </p>
 
 Updates added to remove bugs for CAWS. The final results for the hello world program is present in 
+<<<<<<< HEAD
 `./results_10M/champsim.trace.gz-bimodal-no-no-no-no-lru-1core`
+
+./results_10M/champsim.trace.gz-bimodal-no-no-no-no-lru-1core.txt
+>>>>>>> a473b643a81943f1ee72b9a267a715501355c7ff
 
 To get the results after installing pin tool building core using ChampSim-
 ```
